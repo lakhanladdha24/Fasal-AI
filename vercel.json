@@ -6,8 +6,12 @@
       "destination": "/api/index.js"
     },
     {
-      "source": "/(.*)",
+      "source": "/((?!api).*\\.[^/]+)$",
       "destination": "/client/dist/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/client/dist/index.html"
     }
   ]
 }
