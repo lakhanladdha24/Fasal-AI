@@ -1,0 +1,72 @@
+{
+    "best_model": "CatBoost",
+    "metrics": {
+        "Linear Regression": {
+            "cv_r2": 0.4495,
+            "cv_mse": 370.9425,
+            "cv_mae": 13.1349,
+            "test_r2": 0.3935,
+            "test_mse": 377.8873,
+            "test_mae": 13.4583
+        },
+        "Random Forest": {
+            "cv_r2": 0.8646,
+            "cv_mse": 90.7222,
+            "cv_mae": 5.3264,
+            "test_r2": 0.8186,
+            "test_mse": 113.0256,
+            "test_mae": 6.0733
+        },
+        "XGBoost": {
+            "cv_r2": 0.8846,
+            "cv_mse": 77.7283,
+            "cv_mae": 4.7474,
+            "test_r2": 0.8529,
+            "test_mse": 91.6396,
+            "test_mae": 5.1226
+        },
+        "LightGBM": {
+            "cv_r2": 0.8901,
+            "cv_mse": 74.1965,
+            "cv_mae": 4.7201,
+            "test_r2": 0.8515,
+            "test_mse": 92.5131,
+            "test_mae": 5.3871
+        },
+        "CatBoost": {
+            "cv_r2": 0.9057,
+            "cv_mse": 63.5972,
+            "cv_mae": 4.3412,
+            "test_r2": 0.885,
+            "test_mse": 71.6316,
+            "test_mae": 4.6817
+        }
+    },
+    "dataset_info": {
+        "total_rows": 2050,
+        "synthetic_rows": 2000,
+        "original_rows": 50,
+        "crops_covered": [
+            "Cotton",
+            "Carrot",
+            "Sugarcane",
+            "Tomato",
+            "Soybean",
+            "Rice",
+            "Maize",
+            "Wheat",
+            "Barley",
+            "Potato"
+        ],
+        "features": [
+            "Crop_Type",
+            "Farm_Area(acres)",
+            "Irrigation_Type",
+            "Fertilizer_Used(tons)",
+            "Pesticide_Used(kg)",
+            "Soil_Type",
+            "Season",
+            "Water_Usage(cubic meters)"
+        ]
+    }
+}
